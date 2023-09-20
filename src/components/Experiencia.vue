@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-/*import { reactive } from 'vue';
+import { reactive } from 'vue';
 
 const puesto = reactive({
     puesto: 'Desarrollador Web',
@@ -9,7 +9,7 @@ const puesto = reactive({
     fechaFin: 'Presente',
     descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac. Maecenas viverra tortor eget convallis vestibulum. Donec pulvinar venenatis est, non sollicitudin metus laoreet sed. Fusce tincidunt felis nec neque aliquet porttitor',
     puntosClabe: 'lorem impsum'
-})*/
+})
 </script>
 
 <template>                  
@@ -20,10 +20,11 @@ const puesto = reactive({
                 <li class="mb-10 ml-4">
                     <div
                         class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                        
                     </div>
-                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February
-                        2022</time>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+                    {{ puesto.puesto }}
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> {{ puesto.fechaInicio }} - {{ puesto.fechaFin }} </time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-black">{{ puesto.empresa}}</h3>
                     <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages
                         including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp;
                         Marketing
