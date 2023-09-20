@@ -7,13 +7,17 @@ import Experiencia from './components/Experiencia.vue';
 <template>
   <NavBar />
   <div
-    class="banner-personalizado bg-fixed justify-center space-x-12 space-y-36 shadow-lg bg-gray-600 w-full antialiased">
-    <div class="w-full flex justify-center items-center colum">
-      <div class="break-after-column"><Profile /></div>
-      <div class="break-after-column"><Experiencia /></div>
+    class="banner-personalizado bg-fixed justify-center space-y-36 shadow-lg bg-gray-600 w-full antialiased colums-1">
+    <div class="flex justify-center items-center w-full">
+        <Profile class="break-after-column w-1/2 content-center" />
+    </div>
+    <div class="flex justify-center items-center w-full ">
+        <Experiencia class="break-after-column w-1/2 content-center h-fit" />
     </div>
     <div class="h-96">
-
+      <div class="flex justify-center items-center">
+        Horizontally Centered Element
+      </div>
     </div>
   </div>
 </template>
@@ -31,5 +35,4 @@ import Experiencia from './components/Experiencia.vue';
   background-image: url(./assets/IMG_2997.jpeg);
   background-blend-mode: multiply;
   background-size: cover;
-}
-</style>
+}</style>

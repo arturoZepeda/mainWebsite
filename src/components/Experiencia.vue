@@ -1,5 +1,5 @@
-<script setup>
-import { reactive } from 'vue';
+<script lang="ts" setup>
+/*import { reactive } from 'vue';
 
 const puesto = reactive({
     puesto: 'Desarrollador Web',
@@ -9,10 +9,10 @@ const puesto = reactive({
     fechaFin: 'Presente',
     descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac. Maecenas viverra tortor eget convallis vestibulum. Donec pulvinar venenatis est, non sollicitudin metus laoreet sed. Fusce tincidunt felis nec neque aliquet porttitor',
     puntosClabe: 'lorem impsum'
-})
+})*/
 </script>
 
-<template>
+<template>                  
     <div class="bg-white space-x-12 rounded-lg ficha-inicial w-1/2">
         <!-- This is an example component -->
         <div class="max-w-2xl mx-auto py-3">
@@ -60,6 +60,7 @@ const puesto = reactive({
             </ol>
         </div>
     </div>
+
 </template>
 
 <style scoped>.fichaInicial {
