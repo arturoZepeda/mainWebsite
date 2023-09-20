@@ -12,7 +12,14 @@ import Experiencia from './components/Experiencia.vue';
         <Profile class="break-after-column w-1/2 content-center" />
     </div>
     <div class="flex justify-center items-center w-full ">
+      <div class="bg-white space-x-12 rounded-lg ficha-inicial w-1/2">
+        <!-- This is an example component -->
+        <div class="max-w-2xl mx-auto py-3">
+            <ol class="relative border-l border-gray-200 dark:border-gray-700">
         <Experiencia class="break-after-column w-1/2 content-center h-fit" />
+            </ol>
+        </div>
+      </div>
     </div>
     <div class="h-96">
       <div class="flex justify-center items-center">
