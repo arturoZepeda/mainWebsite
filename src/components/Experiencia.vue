@@ -1,5 +1,11 @@
 <script lang="ts" setup>
-import { reactive } from 'vue';
+defineProps({
+    Experiencia: {
+        type: Object,
+        required: true
+    }
+})
+/*import { reactive } from 'vue';
 
 const puesto = reactive({
     puesto: 'Desarrollador Web',
@@ -9,21 +15,21 @@ const puesto = reactive({
     fechaFin: 'Presente',
     descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac. Maecenas viverra tortor eget convallis vestibulum. Donec pulvinar venenatis est, non sollicitudin metus laoreet sed. Fusce tincidunt felis nec neque aliquet porttitor',
     link: 'https://arturozepeda.xyz'
-})
+})*/
 </script>
 
 <template>                  
 
-                <li class="mb-10 ml-4" v-for="puesto">
+                <li class="mb-10 ml-4">
                     <div
                         class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
                         
                     </div>
-                    {{ puesto.puesto }}
-                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> {{ puesto.fechaInicio }} - {{ puesto.fechaFin }} </time>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-black">{{ puesto.empresa}}</h3>
-                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{{ puesto.descripcion}}</p>
-                    <a :href="puesto.link" v-if="puesto.link"
+                    {{ Experiencia.Experiencia }}
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> {{ Experiencia.fechaInicio }} - {{ Experiencia.fechaFin }} </time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-black">{{ Experiencia.empresa}}</h3>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{{ Experiencia.descripcion}}</p>
+                    <a :href="Experiencia.link" v-if="Experiencia.link"
                         class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Learn
                         more <svg class="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
