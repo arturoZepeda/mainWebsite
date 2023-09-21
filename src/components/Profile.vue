@@ -15,6 +15,7 @@
             <p class="mt-8 text-white">Software Engineer | Web Developer | EDI Consultant </p>
             <p class="mt-2 text-white">Universidad tecnologica de México</p>
             <p class="font-light text-white mt-3">CDMX, México</p>
+            <p class="font-light text-white mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis labore doloremque rerum, impedit alias aliquam autem explicabo voluptate sequi numquam, repellat deserunt eius optio ea. Deserunt vitae harum alias eius!</p>
           </div>
         </div>
       </div>

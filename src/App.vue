@@ -33,7 +33,7 @@ for (let i = 0; i < 10; i++) {
 
 <template>
   <NavBar />
-  <div class="banner-personalizado bg-fixed justify-center space-y-36 shadow-lg bg-transparent bg-gray-600 w-full antialiased colums-1">
+  <div class="banner-personalizado bg-fixed justify-center space-y-36 shadow-lg  bg-gray-600 w-full antialiased colums-1">
     <div class="flex justify-center items-center w-full py-10">
       <Profile class="break-after-column w-1/2 content-center" />
     </div>

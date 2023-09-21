@@ -5,17 +5,6 @@ defineProps({
         required: true
     }
 })
-/*import { reactive } from 'vue';
-
-const puesto = reactive({
-    puesto: 'Desarrollador Web',
-    empresa: 'Empresa',
-    ubicacion: 'Remoto',
-    fechaInicio: '2015',
-    fechaFin: 'Presente',
-    descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac. Maecenas viverra tortor eget convallis vestibulum. Donec pulvinar venenatis est, non sollicitudin metus laoreet sed. Fusce tincidunt felis nec neque aliquet porttitor',
-    link: 'https://arturozepeda.xyz'
-})*/
 </script>
 
 <template>                  
