@@ -33,11 +33,11 @@ for (let i = 0; i < 10; i++) {
 
 <template>
   <NavBar />
-  <div class="banner-personalizado bg-fixed justify-center space-y-36 shadow-lg  bg-gray-600 w-full antialiased colums-1">
+  <div class="banner-personalizado bg-fixed justify-center space-y-15 shadow-lg  bg-gray-600 w-full antialiased colums-1">
     <div class="flex justify-center items-center w-full py-10">
       <Profile class="break-after-column w-1/2 content-center" />
     </div>
-    <div class="flex justify-center items-center w-full ">
+    <div class="flex justify-center items-center">
       <div class="bg-white  rounded-lg ficha-inicial w-1/2">
         <!-- This is an example component -->
         <div class="max-w-2xl mx-auto py-3">
@@ -48,15 +48,15 @@ for (let i = 0; i < 10; i++) {
         </div>
       </div>
     </div>
-    <div class="max-w-2xl mx-auto py-3 ">
-      <ol class="relative border-l border-gray-200 dark:border-gray-700 bg-white ">
+    <div class="max-w-2xl mx-auto columns-3 bg-gray-600 w-full">
+      <ol class="relative border-l border-gray-200 dark:border-gray-700 ">
         <h2 class="text-2xl font-bold text-gray-900 columns-3">Proyectos</h2>
         <Proyectos class="break-after-column w-1/2 content-center" v-for="callout in callouts" :callout="callout" />
         <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
         </div>
       </ol>
     </div>
-    <div class="h-96">
+    <div class="max-w-2xl mx-auto py-3 ">
       <div class="flex justify-center items-center">
         Horizontally Centered Element
       </div>
