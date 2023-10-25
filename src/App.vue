@@ -48,13 +48,15 @@ for (let i = 0; i < 10; i++) {
         </div>
       </div>
     </div>
-    <div class="max-w-2xl mx-auto columns-3 bg-gray-600 w-full">
-      <ol class="relative border-l border-gray-200 dark:border-gray-700 ">
+    <div class="flex justify-center items-center py-3">
+    <div class="max-w-2xl mx-auto columns-3 bg-white w-full py-3">
+      <ol class="relative border-l border-gray-200 dark:border-gray-700 px-3">
         <h2 class="text-2xl font-bold text-gray-900 columns-3">Proyectos</h2>
         <Proyectos class="break-after-column w-1/2 content-center" v-for="callout in callouts" :callout="callout" />
         <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
         </div>
       </ol>
+    </div>
     </div>
     <div class="max-w-2xl mx-auto py-3 ">
       <div class="flex justify-center items-center">
