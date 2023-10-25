@@ -15,17 +15,17 @@ const temp = {
   descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac. Maecenas viverra tortor eget convallis vestibulum. Donec pulvinar venenatis est, non sollicitudin metus laoreet sed. Fusce tincidunt felis nec neque aliquet porttitor',
   link: 'https://arturozepeda.xyz'
 };
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 4; i++) {
   Experiencias.value.push(temp);
 }
 const temp1 = {
-  name: "nombre",
+  name: "nombre test",
   href: "https://arturozepeda.xyz",
   description: "descripcion",
-  imageSrc: "",
-  imageAlt: ""
+  imageSrc: "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
+  imageAlt: "test logo"
 }
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 7; i++) {
   callouts.value.push(temp1);
 }
 
@@ -52,7 +52,10 @@ for (let i = 0; i < 10; i++) {
     <div class="max-w-2xl mx-auto columns-3 bg-white w-full py-3">
       <ol class="relative border-l border-gray-200 dark:border-gray-700 px-3">
         <h2 class="text-2xl font-bold text-gray-900 columns-3">Proyectos</h2>
+        <div>
         <Proyectos class="break-after-column w-1/2 content-center" v-for="callout in callouts" :callout="callout" />
+
+        </div>
         <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
         </div>
       </ol>
