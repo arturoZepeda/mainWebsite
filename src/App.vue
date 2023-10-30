@@ -41,6 +41,7 @@ for (let i = 0; i < 7; i++) {
       <div class="bg-white  rounded-lg ficha-inicial w-1/2">
         <!-- This is an example component -->
         <div class="max-w-2xl mx-auto py-3">
+          <h2 class="text-2xl font-bold text-gray-900">Proyectos</h2>
           <ol class="relative border-l border-gray-200 dark:border-gray-700">
             <Experiencia class="break-after-column w-1/2 content-center h-fit" v-for="Experiencia in Experiencias"
               :Experiencia="Experiencia" />
@@ -48,17 +49,26 @@ for (let i = 0; i < 7; i++) {
         </div>
       </div>
     </div>
-    <div class="flex justify-center items-center py-5">
-      <div class="bg-white  rounded-lg ficha-inicial w-1/2">
-        <ol class="relative border-l border-gray-200 dark:border-gray-700 px-3">
-        <h2 class="text-2xl font-bold text-gray-900 columns-3">Proyectos</h2>
-        <div>
-        <Proyectos class="break-after-column w-1/2 content-center" v-for="callout in callouts" :callout="callout" />
 
+    <div class="flex justify-center items-center">
+      <div class="bg-white  rounded-lg ficha-inicial w-1/2">
+        <!-- This is an example component -->
+        <div class="max-w-2xl mx-auto py-3">
+          <h2 class="text-2xl font-bold text-gray-900 columns-3 px-10">Proyectos</h2>
+        <div class="columns-2 ">
+          <Proyectos class="break-after-column content-center " v-for="callout in callouts" :callout="callout" />
         </div>
-        <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
         </div>
-      </ol>
+      </div>
+    </div>
+
+
+    <div class="flex justify-center items-center py-5">
+      <div class="max-w-2xl mx-auto py-3 w-1/2">
+        <h2 class="text-2xl font-bold text-gray-900 columns-3 px-10">Proyectos</h2>
+        <div class="columns-2">
+          <Proyectos class="break-after-column w-1/2 content-center" v-for="callout in callouts" :callout="callout" />
+        </div>
       </div>
     </div>
 
@@ -69,7 +79,6 @@ for (let i = 0; i < 7; i++) {
       </div>
     </div>
   </div>
-
 </template>
 
 <style scoped>
