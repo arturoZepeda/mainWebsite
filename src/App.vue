@@ -50,7 +50,7 @@ for (let i = 0; i < 7; i++) {
       </div>
     </div>
 
-    <div class="flex justify-center items-center">
+    <div class="flex justify-center items-center py-10">
       <div class="bg-white  rounded-lg ficha-inicial w-1/2">
         <!-- This is an example component -->
         <div class="max-w-2xl mx-auto py-3">
@@ -61,18 +61,6 @@ for (let i = 0; i < 7; i++) {
         </div>
       </div>
     </div>
-
-
-    <div class="flex justify-center items-center py-5">
-      <div class="max-w-2xl mx-auto py-3 w-1/2">
-        <h2 class="text-2xl font-bold text-gray-900 columns-3 px-10">Proyectos</h2>
-        <div class="columns-2">
-          <Proyectos class="break-after-column w-1/2 content-center" v-for="callout in callouts" :callout="callout" />
-        </div>
-      </div>
-    </div>
-
-
     <div class="max-w-2xl mx-auto py-3 ">
       <div class="flex justify-center items-center">
         Horizontally Centered Element
