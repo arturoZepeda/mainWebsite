@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-    <div>
+    <div class="border-gray-900 rounded border-2">
     <div class="flow-root">
         <dl class="-my-3 divide-y divide-gray-100 text-sm">
             <div class="grid grid-cols-1 gap-1 py-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">

@@ -73,7 +73,7 @@ for (let i = 0; i < 7; i++) {
       </div>
     </div>
     <div class="flex justify-center items-center py-10">
-      <div id="PORTFOLIO" class="bg-white  rounded-lg ficha-inicial w-1/2">
+      <div id="ABILITIES" class="bg-white  rounded-lg ficha-inicial w-1/2">
         <!-- This is an example component -->
         <div class="max-w-2xl mx-auto py-3">
           <h2 class="text-2xl font-bold text-gray-900 columns-3 px-10">Technical abilities</h2>
