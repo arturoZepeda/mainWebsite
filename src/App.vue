@@ -34,14 +34,14 @@ for (let i = 0; i < 7; i++) {
 <template>
   <NavBar />
   <div class="banner-personalizado bg-fixed justify-center space-y-15 shadow-lg  bg-gray-600 w-full antialiased colums-1">
-    <div class="flex justify-center items-center w-full py-10">
+    <div id="PROFILE" class="flex justify-center items-center w-full py-10">
       <Profile class="break-after-column w-1/2 content-center" />
     </div>
     <div class="flex justify-center items-center">
       <div class="bg-white  rounded-lg ficha-inicial w-1/2">
         <!-- This is an example component -->
-        <div class="max-w-2xl mx-auto py-3">
-          <h2 class="text-2xl font-bold text-gray-900">Proyectos</h2>
+        <div id="EXPERIENCE" class="max-w-2xl mx-auto py-3">
+          <h2 class="text-2xl font-bold text-gray-900">Experience</h2>
           <ol class="relative border-l border-gray-200 dark:border-gray-700">
             <Experiencia class="break-after-column w-1/2 content-center h-fit" v-for="Experiencia in Experiencias"
               :Experiencia="Experiencia" />
@@ -51,10 +51,10 @@ for (let i = 0; i < 7; i++) {
     </div>
 
     <div class="flex justify-center items-center py-10">
-      <div class="bg-white  rounded-lg ficha-inicial w-1/2">
+      <div id="PORTFOLIO" class="bg-white  rounded-lg ficha-inicial w-1/2">
         <!-- This is an example component -->
         <div class="max-w-2xl mx-auto py-3">
-          <h2 class="text-2xl font-bold text-gray-900 columns-3 px-10">Proyectos</h2>
+          <h2 class="text-2xl font-bold text-gray-900 columns-3 px-10">Portfolio</h2>
         <div class="columns-2 ">
           <Proyectos class="break-after-column content-center " v-for="callout in callouts" :callout="callout" />
         </div>
