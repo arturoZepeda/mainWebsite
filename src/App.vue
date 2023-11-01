@@ -4,8 +4,10 @@ import Profile from './components/Profile.vue';
 import NavBar from './components/NavBar.vue';
 import Experiencia from './components/Experiencia.vue';
 import Proyectos from './components/Proyectos.vue';
+import Habilidades from './components/Habilidades.vue';
 const Experiencias = ref([]);
 const callouts = ref([]);
+const Skills = ref([]);
 const temp = {
   puesto: 'Desarrollador Web',
   empresa: 'Empresa',
@@ -27,6 +29,15 @@ const temp1 = {
 }
 for (let i = 0; i < 7; i++) {
   callouts.value.push(temp1);
+}
+const temp2 = {
+  Skill: "nombre test",
+  Proficiency: "descripcion descripcion descripcion descripcion descripcion descripcion d",
+  Org: "descripcion descripcion descripcion descripcion descripcion descripcion d",
+  Details: "descripcion descripcion descripcion descripcion descripcion descripcion d"
+}
+for (let i = 0; i < 7; i++) {
+  Skills.value.push(temp2);
 }
 
 </script>
@@ -61,9 +72,15 @@ for (let i = 0; i < 7; i++) {
         </div>
       </div>
     </div>
-    <div class="max-w-2xl mx-auto py-3 ">
-      <div class="flex justify-center items-center">
-        Horizontally Centered Element
+    <div class="flex justify-center items-center py-10">
+      <div id="PORTFOLIO" class="bg-white  rounded-lg ficha-inicial w-1/2">
+        <!-- This is an example component -->
+        <div class="max-w-2xl mx-auto py-3">
+          <h2 class="text-2xl font-bold text-gray-900 columns-3 px-10">Technical abilities</h2>
+        <div class="columns-2 ">
+          <Habilidades class="break-after-column content-center " v-for="skill in Skills" :skill="skill" />
+        </div>
+        </div>
       </div>
     </div>
   </div>
