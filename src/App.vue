@@ -30,11 +30,12 @@ const temp1 = {
 for (let i = 0; i < 7; i++) {
   callouts.value.push(temp1);
 }
+
 const temp2 = {
-  Skill: "nombre test",
-  Proficiency: "descripcion descripcion descripcion descripcion descripcion descripcion d",
-  Org: "descripcion descripcion descripcion descripcion descripcion descripcion d",
-  Details: "descripcion descripcion descripcion descripcion descripcion descripcion d"
+    nombre: "JavaScript",
+    porcentaje: 90,
+    descripcion: "Lenguaje de programación para la web",
+    fechaDesde: "2020-01"
 }
 for (let i = 0; i < 7; i++) {
   Skills.value.push(temp2);
@@ -65,20 +66,20 @@ for (let i = 0; i < 7; i++) {
       <div id="PORTFOLIO" class="bg-white  rounded-lg ficha-inicial w-1/2">
         <!-- This is an example component -->
         <div class="max-w-2xl mx-auto py-3">
-          <h2 class="text-2xl font-bold text-gray-900 columns-3 px-10">Portfolio</h2>
+          <h2 class="text-2xl font-bold text-gray-900 columns-3">Portfolio</h2>
         <div class="columns-2 ">
-          <Proyectos class="break-after-column content-center " v-for="callout in callouts" :callout="callout" />
+          <Proyectos class="break-after-column break-inside-avoid-column content-center " v-for="callout in callouts" :callout="callout" />
         </div>
         </div>
       </div>
     </div>
-    <div class="flex justify-center items-center py-10">
+    <div class="flex justify-center items-center">
       <div id="ABILITIES" class="bg-white  rounded-lg ficha-inicial w-1/2">
         <!-- This is an example component -->
         <div class="max-w-2xl mx-auto py-3">
-          <h2 class="text-2xl font-bold text-gray-900 columns-3 px-10">Technical abilities</h2>
-        <div class="columns-2 ">
-          <Habilidades class="break-after-column content-center " v-for="skill in Skills" :skill="skill" />
+          <h2 class="text-2xl font-bold text-gray-900">Technical abilities</h2>
+        <div class="columns-2">
+          <Habilidades class=" break-inside-avoid-column content-center" v-for="skill in Skills" :skill="skill" />
         </div>
         </div>
       </div>

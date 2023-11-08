@@ -8,30 +8,20 @@ defineProps({
 </script>
 
 <template>
-    <div class="border-gray-900 rounded border-2">
-    <div class="flow-root">
-        <dl class="-my-3 divide-y divide-gray-100 text-sm">
-            <div class="grid grid-cols-1 gap-1 py-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
-                <dt class="font-medium text-gray-900">{{ skill.Skill }}</dt>
-                <dd class="text-gray-700 sm:col-span-2">Mr</dd>
+    <div class="max-w-md py-2 px-8 bg-blue-300 shadow-lg rounded-lg my-20">
+        <div class="flex justify-center md:justify-end ">
+        </div>
+        <div>
+            <h2 class="text-gray-800 text-3xl font-semibold">{{skill.nombre}}</h2>
+            <p class="mt-2 text-gray-600">{{skill.descripcion}}</p>
+        </div>
+        <div class="flex">
+            <div class="flex justify-start mt-4 px-3">
+                Since <a href="#" class="text-xl font-medium text-indigo-500">{{skill.fechaDesde}}</a>
             </div>
-
-            <div class="grid grid-cols-1 gap-1 py-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
-                <dt class="font-medium text-gray-900">Proficiency</dt>
-                <dd class="text-gray-700 sm:col-span-2">{{ skill.Proficiency }}</dd>
+            <div class="flex justify-end mt-4 px-3">
+                Mastery <a href="#" class="text-xl font-medium text-indigo-500">{{skill.porcentaje}}%</a>
             </div>
-
-            <div class="grid grid-cols-1 gap-1 py-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
-                <dt class="font-medium text-gray-900">Used in</dt>
-                <dd class="text-gray-700 sm:col-span-2">{{skill.Org}}</dd>
-            </div>
-            <div class="grid grid-cols-1 gap-1 py-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
-                <dt class="font-medium text-gray-900">Bio</dt>
-                <dd class="text-gray-700 sm:col-span-2">
-                    {{skill.Details}}
-                </dd>
-            </div>
-        </dl>
-    </div>
+        </div>
     </div>
 </template>
