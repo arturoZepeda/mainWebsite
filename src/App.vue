@@ -5,6 +5,7 @@ import NavBar from './components/NavBar.vue';
 import Experiencia from './components/Experiencia.vue';
 import Proyectos from './components/Proyectos.vue';
 import Habilidades from './components/Habilidades.vue';
+import PiePagina from './components/PiePagina.vue';
 const Experiencias = ref([]);
 const callouts = ref([]);
 const Skills = ref([]);
@@ -73,10 +74,10 @@ for (let i = 0; i < 7; i++) {
         </div>
       </div>
     </div>
-    <div class="flex justify-center items-center">
+    <div class="flex justify-center">
       <div id="ABILITIES" class="bg-white  rounded-lg ficha-inicial w-1/2">
         <!-- This is an example component -->
-        <div class="max-w-2xl mx-auto py-3">
+        <div class="max-w-2xl mx-auto">
           <h2 class="text-2xl font-bold text-gray-900">Technical abilities</h2>
         <div class="columns-2">
           <Habilidades class=" break-inside-avoid-column content-center" v-for="skill in Skills" :skill="skill" />
@@ -84,6 +85,9 @@ for (let i = 0; i < 7; i++) {
         </div>
       </div>
     </div>
+  </div>
+  <div>
+    <PiePagina />
   </div>
 </template>
 

@@ -7,7 +7,7 @@ defineProps({
 })
 </script>
 <template>
-    <div :key="callout.name" class="group relative">
+    <div :key="callout.name" class=" ">
         <div
             class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-128">
             <img :src="callout.imageSrc" :alt="callout.imageAlt" class="h-full w-full object-cover object-center" />
